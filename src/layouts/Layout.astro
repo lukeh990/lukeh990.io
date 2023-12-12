@@ -1,6 +1,6 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,64 +8,78 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Hi! am Luke.  I am studying Computer Science. Interests: Web Development, Rust, Self-Hosting, AI, Networking, Business, Linux" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>lukeh990 - {title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Hi! am Luke.  I am studying Computer Science. Interests: Web Development, Rust, Self-Hosting, AI, Networking, Business, Linux"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>lukeh990 - {title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	html {
-		font-family: 'JetBrains Mono', monospace;
-		background: #000;
-		color: #8F0;
-	}
-	html, body {
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		width: 100%;
-	}
-	h1 {
-		font-size: 2.5em;
-		text-transform: uppercase;
-		font-weight: 800;
-		margin: 0;
-	}
-	h2 {
-		font-size: 1.5em;
-		text-transform: uppercase;
-		font-weight: 600;
-		margin: 0;
-	}
-	a {
-		color: #8F0;
-		text-transform: uppercase;
-	}
-	@font-face {
-		font-family: 'JetBrains Mono';
-		src: url("fonts/JetBrains_Mono/JetBrainsMono-Regular.ttf") format("truetype");
-		font-weight: 400;
-	}
-	@font-face {
-		font-family: 'JetBrains Mono';
-		src: url("fonts/JetBrains_Mono/JetBrainsMono-Italic.ttf") format("truetype");
-		font-weight: 400;
-		font-style: italic;
-	}
-	@font-face {
-		font-family: 'JetBrains Mono';
-		src: url("fonts/JetBrains_Mono/JetBrainsMono-ExtraBold.ttf") format("truetype");
-		font-weight: 800;
-	}
-	@font-face {
-		font-family: 'JetBrains Mono';
-		src: url("fonts/JetBrains_Mono/JetBrainsMono-SemiBold.ttf") format("truetype");
-		font-weight: 600;
-	}
+  html {
+    font-family: "JetBrains Mono", monospace;
+    background: repeating-linear-gradient(
+      0deg,
+      #0e0d0e 25%,
+      #0e0d0e 50%,
+      #171819 50%,
+      #171819 75%
+    );
+	background-size: 10px 10px;
+    color: #8f0;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+  }
+  a {
+    color: #8f0;
+    text-transform: uppercase;
+  }
+  @font-face {
+    font-family: "JetBrains Mono";
+    src: url("fonts/JetBrains_Mono/JetBrainsMono-Regular.ttf")
+      format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "JetBrains Mono";
+    src: url("fonts/JetBrains_Mono/JetBrainsMono-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "JetBrains Mono";
+    src: url("fonts/JetBrains_Mono/JetBrainsMono-ExtraBold.ttf")
+      format("truetype");
+    font-weight: 800;
+  }
+  @font-face {
+    font-family: "JetBrains Mono";
+    src: url("fonts/JetBrains_Mono/JetBrainsMono-SemiBold.ttf")
+      format("truetype");
+    font-weight: 600;
+  }
 </style>
